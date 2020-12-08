@@ -1,0 +1,55 @@
+{
+    "info": {
+        "name": "stress_duration",
+        "version": "1.0.0",
+        "category": "stress",
+        "keywords": ["stress"],
+        "homepage": "https://answer.bogonets.com/",
+        "bugs": "https://answer.bogonets.com/",
+        "license": "Bogonet License",
+        "author": "zer0",
+        "dependencies": [
+            {"type": "pip", "src": "numpy"}
+        ],
+        "engines": ">=1.1.6",
+        "environment": {
+            "type": "pyenv",
+            "name": "rtc"
+        },
+        "titles": {
+            "en": "stress.duration",
+            "ko": "stress.duration"
+        },
+        "descriptions": {
+            "en": "It gives you stress for a period of time.",
+            "ko": "일정 시간 동안 스트레스를 준다."
+        },
+        "documentation_mime": "text",
+        "documentations": {},
+        "meta": {}
+    },
+    "controls": {
+        "input": "source",
+        "output": "result"
+    },
+    "props": [
+        {
+            "rule": "initialize_only",
+            "name": "duration",
+            "default_value": 1.0,
+            "type": "float",
+            "required": false,
+            "valid": {
+                "advance": true
+            },
+            "title": {
+                "en": "Stress time",
+                "ko": "스트레스 시간"
+            },
+            "help": {
+                "en": "Stress injection time. (seconds)",
+                "ko": "스트레스 주입 시간. (초)"
+            }
+        }
+    ]
+}
