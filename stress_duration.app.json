@@ -39,9 +39,7 @@
             "default_value": 1.0,
             "type": "float",
             "required": false,
-            "valid": {
-                "advance": true
-            },
+            "valid": {},
             "title": {
                 "en": "Stress time",
                 "ko": "스트레스 시간"
